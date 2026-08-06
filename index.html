@@ -45,7 +45,12 @@ input[type=range]{accent-color:#4F3DF5}
 ::selection{background:#4F3DF5;color:#fff}
 @keyframes om-marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 @keyframes om-pulse{0%,100%{opacity:1}50%{opacity:.35}}
+@keyframes om-demo-ring{0%{box-shadow:0 0 0 0 rgba(79,61,245,.45)}100%{box-shadow:0 0 0 16px rgba(79,61,245,0)}}
 button{font-family:inherit}
+#om-demo-float{position:fixed;right:22px;bottom:22px;z-index:9998;display:inline-flex;align-items:center;gap:10px;padding:15px 22px;border-radius:999px;background:#4F3DF5;color:#fff;font:600 15px 'Switzer',sans-serif;box-shadow:0 6px 20px rgba(79,61,245,.4);animation:om-demo-ring 1.8s ease-out infinite}
+#om-demo-float:hover{background:#3D2CE0;color:#fff}
+#om-demo-float .om-demo-dot{width:8px;height:8px;border-radius:50%;background:#B8F5C9;animation:om-pulse 1.4s ease-in-out infinite}
+@media (max-width:560px){#om-demo-float{right:14px;bottom:14px;padding:13px 18px;font-size:14px}}
 @media (max-width:860px){
   .om-grid-2,.om-grid-2b{grid-template-columns:1fr !important;gap:40px !important}
   .om-grid-3{grid-template-columns:1fr !important}
@@ -686,5 +691,7 @@ button{font-family:inherit}
   else boot();
 })();
 </script>
+
+<a id="om-demo-float" href="https://morae-labs.myshopify.com/?_bt=BAh7BkkiC19yYWlscwY6BkVUewhJIglkYXRhBjsAVEkiHW1vcmFlLWxhYnMubXlzaG9waWZ5LmNvbQY7AEZJIghleHAGOwBUSSIdMjAyNi0wOC0wNlQxODozMzo0Mi41NDlaBjsAVEkiCHB1cgY7AFRJIh5wZXJtYW5lbnRfcGFzc3dvcmRfYnlwYXNzBjsARg%3D%3D--745664ffabb3c116b79e7ea716a7baf4051162d2" target="_blank" rel="noopener" data-cta="see_demo_float" aria-label="See the OrderMAX demo on a real Shopify store"><span class="om-demo-dot"></span>See live demo on a real store</a>
 </body>
 </html>
