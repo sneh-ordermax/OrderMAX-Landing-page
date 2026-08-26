@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Cart Upsell &amp; Product Recommendations for Shopify | OrderMAX</title>
+<link rel="icon" type="image/png" href="/images/logo.png">
+<meta name="description" content="Free Shopify app for AI cart upsells and AI product recommendations. Surfaces the most relevant add-on per cart automatically, with A/B-tested results.">
+<link rel="canonical" href="https://ordermax.io/offers/ai-cart-upsell/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="OrderMAX">
+<meta property="og:title" content="AI Cart Upsell &amp; Product Recommendations for Shopify">
+<meta property="og:description" content="Surfaces the most relevant add-on per cart automatically, with A/B-tested results. Free to install.">
+<meta property="og:url" content="https://ordermax.io/offers/ai-cart-upsell/">
+<meta property="og:image" content="https://ordermax.io/images/social-preview.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is AI cart upsell?","acceptedAnswer":{"@type":"Answer","text":"AI cart upsell is a cart-level offer where the add-on product shown to a shopper is chosen automatically based on what's already in their cart, rather than a single fixed offer set manually for every shopper. The goal is to surface the item most likely to convert for that specific cart."}},
+{"@type":"Question","name":"How do AI product recommendations differ from manual upsell rules?","acceptedAnswer":{"@type":"Answer","text":"Manual upsell rules require a merchant to decide in advance which product pairs with which — for example, always showing a phone case with a phone. AI product recommendations instead evaluate the cart's contents (and, where available, catalog and behavior data) to suggest the most relevant add-on, adapting as your catalog changes without needing every rule maintained by hand."}},
+{"@type":"Question","name":"Does AI cart upsell replace A/B testing?","acceptedAnswer":{"@type":"Answer","text":"No — they solve different problems. AI recommendations decide *which* product to show; A/B testing decides *which version of the offer* (copy, discount, placement) converts best. OrderMAX runs both together: AI-matched recommendations inside a widget that's simultaneously being A/B tested."}},
+{"@type":"Question","name":"Do I need my own product data or AI model to use AI cart upsell?","acceptedAnswer":{"@type":"Answer","text":"No. OrderMAX's AI recommendations work from your existing Shopify catalog and campaign setup — there's no separate data pipeline or model to maintain. You launch a campaign through a guided flow and the recommendation logic runs automatically."}},
+{"@type":"Question","name":"Will an AI-recommended upsell look native to my store?","acceptedAnswer":{"@type":"Answer","text":"Yes. The recommendation logic decides which product to show; the widget that displays it inherits your store's theme typography, spacing, and button styles automatically, with a design editor for further control."}}
+]}
+</script>
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&f[]=switzer@400,500,600&display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#F6F3EC;color:#17140D;font-family:'Switzer',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:#4F3DF5;text-decoration:none}
+a:hover{color:#2F22B8}
+::selection{background:#4F3DF5;color:#fff}
+.om-doc p{margin:0 0 16px;font-size:16.5px;line-height:1.75;color:#3B3628;text-wrap:pretty}
+.om-doc h2{margin:0 0 16px;font:800 clamp(26px,3vw,36px)/1.15 'Cabinet Grotesk',sans-serif;letter-spacing:-.025em}
+.om-step{display:flex;gap:16px;align-items:flex-start}
+.om-step span{flex:none;width:34px;height:34px;border-radius:99px;background:#E2EDF8;color:#2A5A8C;display:flex;align-items:center;justify-content:center;font:800 14px 'Cabinet Grotesk',sans-serif}
+.om-faq{border:1px solid #E6E1D3;border-radius:15px;padding:6px 24px;background:#FBFAF6}
+.om-faq summary{padding:16px 0;font:600 16.5px 'Switzer',sans-serif;cursor:pointer}
+.om-faq p{margin:0 0 18px;font-size:15px;line-height:1.7;color:#57503E}
+@media (max-width:860px){ .om-nav-links{display:none !important} }
+@media (max-width:560px){ .om-nav-cta-outline{display:none !important} }
+</style>
+</head>
+<body>
+
+<header style="position:sticky;top:0;z-index:60;background:rgba(246,243,236,.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid #E6E1D3">
+  <div style="max-width:1200px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;gap:28px">
+    <a href="/" style="display:flex;align-items:center;gap:10px;color:#17140D">
+      <img src="/images/logo.png" alt="OrderMAX logo" width="30" height="30" style="width:30px;height:30px;border-radius:9px">
+      <span style="font:800 18px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em">OrderMAX</span>
+    </a>
+    <nav class="om-nav-links" style="display:flex;gap:26px;margin-left:auto;font-size:14.5px;font-weight:500" aria-label="Primary">
+      <a href="/#features" style="color:#57503E">Features</a>
+      <a href="/offers/" style="color:#57503E">Offers &amp; promotions</a>
+      <a href="/#calculator" style="color:#57503E">Calculator</a>
+      <a href="/#faq" style="color:#57503E">FAQ</a>
+    </nav>
+    <div style="display:flex;gap:10px;margin-left:auto">
+      <a class="om-nav-cta-outline" href="https://cal.com/chloe.parker/15min" target="_blank" rel="noopener" style="display:inline-block;padding:10px 18px;border-radius:10px;border:1px solid #CFC9B8;color:#17140D;font:600 14px 'Switzer',sans-serif;background:transparent">Book a call</a>
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_ai_nav" style="display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:10px;background:#4F3DF5;color:#fff;font:600 14px 'Switzer',sans-serif;box-shadow:0 2px 6px rgba(79,61,245,.28)">Add app — Free</a>
+    </div>
+  </div>
+</header>
+
+<section style="border-bottom:1px solid #E6E1D3">
+  <div style="max-width:840px;margin:0 auto;padding:84px 28px 56px;display:flex;flex-direction:column;gap:18px">
+    <span style="font:700 12px 'Cabinet Grotesk',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#4F3DF5">AI cart upsell</span>
+    <h1 style="margin:0;font:800 clamp(38px,5.6vw,60px)/1.04 'Cabinet Grotesk',sans-serif;letter-spacing:-.035em;text-wrap:balance">AI product recommendations that pick the right upsell per cart.</h1>
+    <p style="margin:0;max-width:640px;font-size:17.5px;line-height:1.65;color:#57503E;text-wrap:pretty">
+      AI cart upsell means the add-on offer shown to a shopper is chosen automatically based on what's already in their cart, instead of one fixed offer for everyone. OrderMAX's recommendation logic runs on your existing Shopify catalog — no separate data pipeline, no manual pairing rules to maintain.
+    </p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap">
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_ai_hero" style="display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:12px;background:#4F3DF5;color:#fff;font:600 16px 'Switzer',sans-serif;box-shadow:0 4px 14px rgba(79,61,245,.3)">Add app on Shopify — Free</a>
+      <a href="/offers/" style="display:inline-block;padding:16px 24px;border-radius:12px;border:1px solid #CFC9B8;color:#17140D;font:600 16px 'Switzer',sans-serif;background:#fff">See all offer types</a>
+    </div>
+  </div>
+</section>
+
+<section style="background:#fff;border-bottom:1px solid #E6E1D3">
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>How AI cart upsell works in OrderMAX</h2>
+    <div style="display:flex;flex-direction:column;gap:22px;margin-top:24px">
+      <div class="om-step"><span>1</span><p style="margin:0"><strong style="color:#17140D;font-weight:600">Launch a campaign.</strong> A guided setup flow suggests campaign opportunities based on your catalog — you approve or adjust.</p></div>
+      <div class="om-step"><span>2</span><p style="margin:0"><strong style="color:#17140D;font-weight:600">Recommendations run per cart.</strong> The widget shows the add-on most relevant to what's already in that specific cart, not a single fixed offer.</p></div>
+      <div class="om-step"><span>3</span><p style="margin:0"><strong style="color:#17140D;font-weight:600">The widget matches your theme.</strong> Typography, spacing, and buttons adapt automatically, with a design editor for full control.</p></div>
+      <div class="om-step"><span>4</span><p style="margin:0"><strong style="color:#17140D;font-weight:600">A/B testing layers on top.</strong> Variants of the recommended-offer widget run side by side, and traffic shifts toward the winner automatically.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>AI recommendations vs. manual upsell rules</h2>
+    <p>A manual upsell rule is a merchant deciding in advance which two products pair — "always show a phone case with this phone." That works until the catalog grows or changes, at which point every rule needs manual upkeep. AI product recommendations instead evaluate the cart's actual contents to choose a relevant add-on, adapting automatically as your catalog and traffic change, without a rule to write for every product.</p>
+    <p>AI recommendations decide <em>which</em> product to show; that's a different question from <em>which version</em> of the offer converts best (copy, discount, placement) — that's what A/B testing answers. OrderMAX runs both in the same campaign. If your promotion is a gift instead of a paid add-on, see <a href="/offers/gift-with-purchase/">gift with purchase</a>; for a "buy more, get more" mechanic, see <a href="/offers/bogo-buy-x-get-y/">BOGO / Buy X Get Y</a>. Every one of these mechanics is included in the <a href="/free-upsell-app-shopify/">free upsell app</a> — there is no paid tier to unlock them.</p>
+  </div>
+</section>
+
+<section style="background:#fff;border-top:1px solid #E6E1D3">
+  <div style="max-width:840px;margin:0 auto;padding:80px 28px;display:flex;flex-direction:column;gap:32px">
+    <h2 style="margin:0;font:800 clamp(26px,3vw,36px)/1.15 'Cabinet Grotesk',sans-serif;letter-spacing:-.025em">Frequently asked questions</h2>
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <details class="om-faq"><summary>What is AI cart upsell?</summary><p>AI cart upsell is a cart-level offer where the add-on product shown to a shopper is chosen automatically based on what's already in their cart, rather than a single fixed offer set manually for every shopper. The goal is to surface the item most likely to convert for that specific cart.</p></details>
+      <details class="om-faq"><summary>How do AI product recommendations differ from manual upsell rules?</summary><p>Manual upsell rules require a merchant to decide in advance which product pairs with which — for example, always showing a phone case with a phone. AI product recommendations instead evaluate the cart's contents (and, where available, catalog and behavior data) to suggest the most relevant add-on, adapting as your catalog changes without needing every rule maintained by hand.</p></details>
+      <details class="om-faq"><summary>Does AI cart upsell replace A/B testing?</summary><p>No — they solve different problems. AI recommendations decide which product to show; A/B testing decides which version of the offer (copy, discount, placement) converts best. OrderMAX runs both together: AI-matched recommendations inside a widget that's simultaneously being A/B tested.</p></details>
+      <details class="om-faq"><summary>Do I need my own product data or AI model to use AI cart upsell?</summary><p>No. OrderMAX's AI recommendations work from your existing Shopify catalog and campaign setup — there's no separate data pipeline or model to maintain. You launch a campaign through a guided flow and the recommendation logic runs automatically.</p></details>
+      <details class="om-faq"><summary>Will an AI-recommended upsell look native to my store?</summary><p>Yes. The recommendation logic decides which product to show; the widget that displays it inherits your store's theme typography, spacing, and button styles automatically, with a design editor for further control.</p></details>
+    </div>
+  </div>
+</section>
+
+<section style="background:#F0EDFD;border-top:1px solid #DCD6FB">
+  <div style="max-width:760px;margin:0 auto;padding:96px 28px;display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center">
+    <h2 style="margin:0;font:800 clamp(32px,4.4vw,52px)/1.05 'Cabinet Grotesk',sans-serif;letter-spacing:-.03em">Launch your first AI-matched upsell free.</h2>
+    <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_ai_footer" style="display:inline-flex;align-items:center;gap:10px;padding:17px 28px;border-radius:12px;background:#4F3DF5;color:#fff;font:600 16.5px 'Switzer',sans-serif;box-shadow:0 6px 18px rgba(79,61,245,.3)">Add app on Shopify — Free</a>
+  </div>
+</section>
+
+<footer style="background:#17140D;color:#A8A08A">
+  <div style="max-width:1200px;margin:0 auto;padding:36px 28px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;font-size:13.5px">
+    <span style="display:flex;align-items:center;gap:9px">
+      <img src="/images/logo.png" alt="OrderMAX logo" width="23" height="23" style="width:23px;height:23px;border-radius:7px">
+      <strong style="font:800 15px 'Cabinet Grotesk',sans-serif;color:#F6F3EC">OrderMAX</strong>
+    </span>
+    <span>© 2026 OrderMAX · Manhattan, New York, NY</span>
+    <nav style="display:flex;gap:18px;margin-left:auto" aria-label="Footer">
+      <a href="/" style="color:#CFC9B8">Home</a>
+      <a href="/free-upsell-app-shopify/" style="color:#CFC9B8">Free upsell app</a>
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" style="color:#CFC9B8">Shopify App Store</a>
+      <a href="https://cal.com/chloe.parker/15min" target="_blank" rel="noopener" style="color:#CFC9B8">Book a call</a>
+      <a href="/privacy-policy" style="color:#CFC9B8">Privacy policy</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

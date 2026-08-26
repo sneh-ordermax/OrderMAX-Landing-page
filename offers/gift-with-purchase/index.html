@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gift With Purchase (GWP) App for Shopify | OrderMAX</title>
+<link rel="icon" type="image/png" href="/images/logo.png">
+<meta name="description" content="Free Shopify app for gift-with-purchase (GWP) campaigns. Auto-add free gifts at a spend threshold, styled to your theme, tracked with real funnel analytics.">
+<link rel="canonical" href="https://ordermax.io/offers/gift-with-purchase/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="OrderMAX">
+<meta property="og:title" content="Gift With Purchase (GWP) App for Shopify">
+<meta property="og:description" content="Auto-add free gifts at a spend threshold, styled to your theme, tracked with real funnel analytics. Free to install.">
+<meta property="og:url" content="https://ordermax.io/offers/gift-with-purchase/">
+<meta property="og:image" content="https://ordermax.io/images/social-preview.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is gift with purchase (GWP)?","acceptedAnswer":{"@type":"Answer","text":"Gift with purchase (GWP) is a promotion where a shopper automatically receives a free product once their cart meets a condition — usually a minimum spend, a specific product, or a collection. The gift is added at no cost to the shopper and is designed to increase average order value without discounting the core product."}},
+{"@type":"Question","name":"How is GWP different from a discount?","acceptedAnswer":{"@type":"Answer","text":"A discount reduces the price of what the shopper is already buying. GWP adds something extra at no charge instead of lowering price — it protects your margin on the original item while still giving shoppers a reason to spend more to unlock the free product."}},
+{"@type":"Question","name":"How do I set a gift-with-purchase threshold on Shopify?","acceptedAnswer":{"@type":"Answer","text":"With OrderMAX, you choose a trigger — cart total, a specific product, or a collection — and pick which product to give away for free once that trigger is met. The gift appears automatically in the cart or via a widget, no code or theme edits required."}},
+{"@type":"Question","name":"Can I run tiered gift-with-purchase offers?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can set multiple thresholds so a bigger cart unlocks a better gift — for example a sample at one spend level and a full-size product at a higher one — and track which tier converts best in your funnel analytics."}},
+{"@type":"Question","name":"Does gift with purchase actually increase average order value?","acceptedAnswer":{"@type":"Answer","text":"Showing shoppers a free gift they can unlock by adding a set amount to their cart is a well-documented AOV lever in ecommerce, because it gives shoppers a concrete, visible reason to cross a spend threshold rather than checking out with a smaller cart."}}
+]}
+</script>
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&f[]=switzer@400,500,600&display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#F6F3EC;color:#17140D;font-family:'Switzer',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:#4F3DF5;text-decoration:none}
+a:hover{color:#2F22B8}
+::selection{background:#4F3DF5;color:#fff}
+.om-doc p{margin:0 0 16px;font-size:16.5px;line-height:1.75;color:#3B3628;text-wrap:pretty}
+.om-doc h2{margin:0 0 16px;font:800 clamp(26px,3vw,36px)/1.15 'Cabinet Grotesk',sans-serif;letter-spacing:-.025em}
+.om-step{display:flex;gap:16px;align-items:flex-start}
+.om-step span{flex:none;width:34px;height:34px;border-radius:99px;background:#F0EDFD;color:#3D2CE0;display:flex;align-items:center;justify-content:center;font:800 14px 'Cabinet Grotesk',sans-serif}
+.om-faq{border:1px solid #E6E1D3;border-radius:15px;padding:6px 24px;background:#FBFAF6}
+.om-faq summary{padding:16px 0;font:600 16.5px 'Switzer',sans-serif;cursor:pointer}
+.om-faq p{margin:0 0 18px;font-size:15px;line-height:1.7;color:#57503E}
+@media (max-width:860px){ .om-nav-links{display:none !important} }
+@media (max-width:560px){ .om-nav-cta-outline{display:none !important} }
+</style>
+</head>
+<body>
+
+<header style="position:sticky;top:0;z-index:60;background:rgba(246,243,236,.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid #E6E1D3">
+  <div style="max-width:1200px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;gap:28px">
+    <a href="/" style="display:flex;align-items:center;gap:10px;color:#17140D">
+      <img src="/images/logo.png" alt="OrderMAX logo" width="30" height="30" style="width:30px;height:30px;border-radius:9px">
+      <span style="font:800 18px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em">OrderMAX</span>
+    </a>
+    <nav class="om-nav-links" style="display:flex;gap:26px;margin-left:auto;font-size:14.5px;font-weight:500" aria-label="Primary">
+      <a href="/#features" style="color:#57503E">Features</a>
+      <a href="/offers/" style="color:#57503E">Offers &amp; promotions</a>
+      <a href="/#calculator" style="color:#57503E">Calculator</a>
+      <a href="/#faq" style="color:#57503E">FAQ</a>
+    </nav>
+    <div style="display:flex;gap:10px;margin-left:auto">
+      <a class="om-nav-cta-outline" href="https://cal.com/chloe.parker/15min" target="_blank" rel="noopener" style="display:inline-block;padding:10px 18px;border-radius:10px;border:1px solid #CFC9B8;color:#17140D;font:600 14px 'Switzer',sans-serif;background:transparent">Book a call</a>
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_gwp_nav" style="display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:10px;background:#4F3DF5;color:#fff;font:600 14px 'Switzer',sans-serif;box-shadow:0 2px 6px rgba(79,61,245,.28)">Add app — Free</a>
+    </div>
+  </div>
+</header>
+
+<section style="border-bottom:1px solid #E6E1D3">
+  <div style="max-width:840px;margin:0 auto;padding:84px 28px 56px;display:flex;flex-direction:column;gap:18px">
+    <span style="font:700 12px 'Cabinet Grotesk',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#4F3DF5">Gift with purchase</span>
+    <h1 style="margin:0;font:800 clamp(38px,5.6vw,60px)/1.04 'Cabinet Grotesk',sans-serif;letter-spacing:-.035em;text-wrap:balance">A gift-with-purchase (GWP) app for Shopify that installs in minutes.</h1>
+    <p style="margin:0;max-width:640px;font-size:17.5px;line-height:1.65;color:#57503E;text-wrap:pretty">
+      Gift with purchase is a promotion where a shopper automatically gets a free product once their cart crosses a spend, product, or collection threshold — raising order value without discounting what they're already buying. OrderMAX runs GWP campaigns natively in your cart, styled to your theme, free to launch.
+    </p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap">
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_gwp_hero" style="display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:12px;background:#4F3DF5;color:#fff;font:600 16px 'Switzer',sans-serif;box-shadow:0 4px 14px rgba(79,61,245,.3)">Add app on Shopify — Free</a>
+      <a href="/offers/" style="display:inline-block;padding:16px 24px;border-radius:12px;border:1px solid #CFC9B8;color:#17140D;font:600 16px 'Switzer',sans-serif;background:#fff">See all offer types</a>
+    </div>
+  </div>
+</section>
+
+<section style="background:#fff;border-bottom:1px solid #E6E1D3">
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>How a gift-with-purchase campaign works</h2>
+    <div style="display:flex;flex-direction:column;gap:22px;margin-top:24px">
+      <div class="om-step"><span>1</span><p style="margin:0"><strong style="color:#17140D;font-weight:600">Pick the trigger.</strong> Cart total (e.g. spend $75+), a specific product, or a collection.</p></div>
+      <div class="om-step"><span>2</span><p style="margin:0"><strong style="color:#17140D;font-weight:600">Pick the gift.</strong> Any product in your catalog — a sample, a bestseller, a new launch.</p></div>
+      <div class="om-step"><span>3</span><p style="margin:0"><strong style="color:#17140D;font-weight:600">Go live.</strong> The gift shows in the cart widget automatically once the shopper qualifies, styled to match your theme — no code.</p></div>
+      <div class="om-step"><span>4</span><p style="margin:0"><strong style="color:#17140D;font-weight:600">Track it.</strong> Funnel analytics show offer views, acceptance rate, and the discount cost of the gift against the AOV lift it produced.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>GWP vs. a straight discount</h2>
+    <p>A percentage-off discount lowers the price of what a shopper is already buying — it protects nothing on that item's margin. Gift with purchase instead adds something extra at no charge once a threshold is met, which means the core product keeps its full price while shoppers still get a concrete reason to add more to their cart. That's why GWP tends to be used for AOV growth specifically, while blanket discounts are used for clearing inventory or matching a competitor's price.</p>
+    <p>Free gifts and GWP can also be combined with other promotion types — see <a href="/offers/bogo-buy-x-get-y/">BOGO / Buy X Get Y</a> for a related mechanic, or <a href="/offers/discount-stacking/">discount stacking</a> if you want to layer a gift trigger on top of a percentage-off code.</p>
+  </div>
+</section>
+
+<section style="background:#fff;border-top:1px solid #E6E1D3">
+  <div style="max-width:840px;margin:0 auto;padding:80px 28px;display:flex;flex-direction:column;gap:32px">
+    <h2 style="margin:0;font:800 clamp(26px,3vw,36px)/1.15 'Cabinet Grotesk',sans-serif;letter-spacing:-.025em">Frequently asked questions</h2>
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <details class="om-faq"><summary>What is gift with purchase (GWP)?</summary><p>Gift with purchase (GWP) is a promotion where a shopper automatically receives a free product once their cart meets a condition — usually a minimum spend, a specific product, or a collection. The gift is added at no cost to the shopper and is designed to increase average order value without discounting the core product.</p></details>
+      <details class="om-faq"><summary>How is GWP different from a discount?</summary><p>A discount reduces the price of what the shopper is already buying. GWP adds something extra at no charge instead of lowering price — it protects your margin on the original item while still giving shoppers a reason to spend more to unlock the free product.</p></details>
+      <details class="om-faq"><summary>How do I set a gift-with-purchase threshold on Shopify?</summary><p>With OrderMAX, you choose a trigger — cart total, a specific product, or a collection — and pick which product to give away for free once that trigger is met. The gift appears automatically in the cart or via a widget, no code or theme edits required.</p></details>
+      <details class="om-faq"><summary>Can I run tiered gift-with-purchase offers?</summary><p>Yes. You can set multiple thresholds so a bigger cart unlocks a better gift — for example a sample at one spend level and a full-size product at a higher one — and track which tier converts best in your funnel analytics.</p></details>
+      <details class="om-faq"><summary>Does gift with purchase actually increase average order value?</summary><p>Showing shoppers a free gift they can unlock by adding a set amount to their cart is a well-documented AOV lever in ecommerce, because it gives shoppers a concrete, visible reason to cross a spend threshold rather than checking out with a smaller cart.</p></details>
+    </div>
+  </div>
+</section>
+
+<section style="background:#F0EDFD;border-top:1px solid #DCD6FB">
+  <div style="max-width:760px;margin:0 auto;padding:96px 28px;display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center">
+    <h2 style="margin:0;font:800 clamp(32px,4.4vw,52px)/1.05 'Cabinet Grotesk',sans-serif;letter-spacing:-.03em">Launch your first gift-with-purchase offer free.</h2>
+    <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_gwp_footer" style="display:inline-flex;align-items:center;gap:10px;padding:17px 28px;border-radius:12px;background:#4F3DF5;color:#fff;font:600 16.5px 'Switzer',sans-serif;box-shadow:0 6px 18px rgba(79,61,245,.3)">Add app on Shopify — Free</a>
+  </div>
+</section>
+
+<footer style="background:#17140D;color:#A8A08A">
+  <div style="max-width:1200px;margin:0 auto;padding:36px 28px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;font-size:13.5px">
+    <span style="display:flex;align-items:center;gap:9px">
+      <img src="/images/logo.png" alt="OrderMAX logo" width="23" height="23" style="width:23px;height:23px;border-radius:7px">
+      <strong style="font:800 15px 'Cabinet Grotesk',sans-serif;color:#F6F3EC">OrderMAX</strong>
+    </span>
+    <span>© 2026 OrderMAX · Manhattan, New York, NY</span>
+    <nav style="display:flex;gap:18px;margin-left:auto" aria-label="Footer">
+      <a href="/" style="color:#CFC9B8">Home</a>
+      <a href="/free-upsell-app-shopify/" style="color:#CFC9B8">Free upsell app</a>
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" style="color:#CFC9B8">Shopify App Store</a>
+      <a href="https://cal.com/chloe.parker/15min" target="_blank" rel="noopener" style="color:#CFC9B8">Book a call</a>
+      <a href="/privacy-policy" style="color:#CFC9B8">Privacy policy</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
