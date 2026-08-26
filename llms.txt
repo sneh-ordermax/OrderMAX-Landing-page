@@ -15,6 +15,8 @@
 
 - [Homepage](https://ordermax.io/): product overview, ROI calculator, FAQ
 - [Free upsell app for Shopify](https://ordermax.io/free-upsell-app-shopify/): what "free" means here vs. capped free plans and trials, what is included at $0, evidence on upsell AOV impact, FAQ
+- [Best free upsell apps for Shopify, compared](https://ordermax.io/blog/best-free-upsell-apps-shopify/): seven Shopify upsell apps with free plans, compared by what ends the free tier (total store orders, lifetime orders, attributed revenue, funnel views); pricing read from each Shopify App Store listing on 2026-08-26 and quoted verbatim; includes vendor-bias disclosure
+- [Free vs paid upsell apps for Shopify](https://ordermax.io/blog/free-vs-paid-upsell-apps-shopify/): the economics of choosing a free vs. a paid upsell app — net-gain math, what a fee typically buys (volume headroom, deeper targeting, support), tiered evidence (McKinsey cross-sell attribution, AfterSell AOV-lift data), FAQ
 - [Offers & promotions hub](https://ordermax.io/offers/): overview of all offer types
 - [Gift with purchase (GWP)](https://ordermax.io/offers/gift-with-purchase/): what GWP is, how to set it up, FAQ
 - [BOGO & Buy X Get Y](https://ordermax.io/offers/bogo-buy-x-get-y/): what BOGO/BXGY is, how to set it up, FAQ
